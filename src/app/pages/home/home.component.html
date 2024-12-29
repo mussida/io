@@ -1,6 +1,6 @@
-<div class="w-screen h-screen flex justify-center">
+<!-- <div class="w-screen h-screen flex justify-center">
   <img
-    class="w-screen h-screen object-cover sm:hidden"
+    class="w-screen max-h-screen h-full object-cover sm:hidden"
     src="assets/vertical1.JPG"
     alt=""
   />
@@ -9,16 +9,62 @@
     src="assets/trattore.JPG"
     alt=""
   />
-</div>
-<!-- <div class="flex justify-center md:items-center w-screen h-screen top-0">
+</div> -->
+<div
+  class="flex justify-center md:items-center w-screen h-screen top-0 sm:hidden"
+>
   <div class="relative">
     <splide
       [options]="{
           perPage: 1,
-          pagination: true,
+          pagination: false,
           arrows: true,
           cover: true,
-          type: 'fade',
+          autoplay: true,
+          interval: 3000,
+          perMove: 1,
+          type: 'loop',
+           classes:{
+              prev  : 'splide__arrow--prev transparent-background',
+              next  : 'splide__arrow--next transparent-background',
+            }
+          }"
+    >
+      <splide-slide>
+        <div class="w-full h-full flex justify-center items-center">
+          <img
+            src="/assets/vertical1.JPG"
+            class="object-cover h-screen w-screen"
+            alt=""
+          />
+        </div>
+      </splide-slide>
+      <splide-slide>
+        <div class="w-full h-full flex justify-center items-center">
+          <img
+            src="https://myportfolioarchive.s3.eu-north-1.amazonaws.com/90140015.JPG"
+            class="object-cover h-screen w-screen"
+            alt=""
+          />
+        </div>
+      </splide-slide>
+    </splide>
+  </div>
+</div>
+<div
+  class="justify-center md:items-center w-screen h-screen top-0 sm:flex hidden"
+>
+  <div class="relative">
+    <splide
+      [options]="{
+          pagination: false,
+          perPage: 1,
+          arrows: true,
+          cover: true,
+          autoplay: true,
+          interval: 3000,
+          perMove: 1,
+          type: 'loop',
            classes:{
               prev  : 'splide__arrow--prev transparent-background',
               next  : 'splide__arrow--next transparent-background',
@@ -29,7 +75,7 @@
         <div class="w-full h-full flex justify-center items-center">
           <img
             src="/assets/trattore.JPG"
-            class="object-cover max-w-[50rem] w-full h-full"
+            class="object-cover h-screen w-screen"
             alt=""
           />
         </div>
@@ -37,12 +83,21 @@
       <splide-slide>
         <div class="w-full h-full flex justify-center items-center">
           <img
-            src="/assets/landing2.JPG"
-            class="object-cover max-w-[50rem] w-full h-full"
+            src="https://myportfolioarchive.s3.eu-north-1.amazonaws.com/12910024.JPG"
+            class="object-cover h-screen w-screen"
+            alt=""
+          />
+        </div>
+      </splide-slide>
+      <splide-slide>
+        <div class="w-full h-full flex justify-center items-center">
+          <img
+            src="https://myportfolioarchive.s3.eu-north-1.amazonaws.com/11.jpg"
+            class="object-cover h-screen w-screen"
             alt=""
           />
         </div>
       </splide-slide>
     </splide>
   </div>
-</div> -->
+</div>
