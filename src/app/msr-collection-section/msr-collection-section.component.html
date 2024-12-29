@@ -1,0 +1,38 @@
+<div class="flex flex-col border">
+  <div class="p-6 flex flex-col sm:flex-row gap-4">
+    <div class="relative w-full sm:w-[800px]">
+      <img
+        src="assets/landing1bw.png"
+        class="w-full h-full object-contain rounded"
+        alt=""
+      />
+      <div
+        class="absolute flex top-0 w-full h-full flex-col justify-center items-center"
+      >
+        <div
+          class="font-noto_arabic_secondary cursor-pointer text-8xl font-bold text-pink-300 drop-shadow-[2px_2px_0px_rgba(22,160,133,1)] z-50"
+        >
+          أسوان
+        </div>
+        <div
+          class="font-noto_arabic_secondary cursor-pointer text-3xl font-bold text-pink-300 drop-shadow-[1px_1px_0px_rgba(22,160,133,1)] z-50"
+        >
+          MSR COLLECTION
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between items-start gap-4">
+      <div  [routerLink]="['/msr-collection']" class="cursor-pointer hover:text-blue-500">Project 1</div>
+      <div>
+        <div class="flex gap-3">
+          <div class="cursor-pointer hover:text-blue-500">Msr Collection</div>
+        </div>
+        <div class="cursor-pointer hover:text-blue-500">2024</div>
+        <div>
+          <div class="cursor-pointer hover:text-blue-500">Locations</div>
+          <div class="cursor-pointer hover:text-blue-500">Cairo, Aswan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

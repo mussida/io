@@ -1,0 +1,22 @@
+<div
+  class="flex font-mono_lite w-60 opacity-500 overflow-hidden uppercase"
+>
+<div class="background-div min-h-4"></div>
+  <div class="max-h-[70%] inline-flex flex-nowrap">
+    <ul
+      class="hover:pause flex items-end justify-center md:justify-start [&_li]:mx-4 py-2 animate-infinite-scroll no-scroll whitespace-nowrap"
+    >
+      @for (word of words(); track $index) {
+      <li>{{word}}</li>
+      }
+    </ul>
+    <ul
+      class="flex items-center z-50 justify-center md:justify-start [&_li]:mx-4 py-2 animate-infinite-scroll no-scroll whitespace-nowrap"
+      aria-hidden="true"
+    >
+      @for (word of words(); track $index) {
+      <li key="{key}">{{word}}</li>
+      }
+    </ul>
+  </div>
+</div>

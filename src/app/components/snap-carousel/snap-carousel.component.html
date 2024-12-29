@@ -1,0 +1,5 @@
+<div class="flex snap-x snap-mandatory h-screen w-full mx:auto overflow-scroll">
+  @for (image of images; track $index) {
+  <img [src]="image" class="snap-center w-[800px] object-contain" alt="" />
+  }
+</div>
