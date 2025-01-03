@@ -1,1 +1,68 @@
-<app-thumbnail></app-thumbnail>
+<div class="m-auto mt-16 sm:mt-20 sm:text-2xl flex flex-col gap-8 justify-center items-center">
+  <div class="flex w-full justify-center items-center">
+    <splide
+      #gridThumbnailSplide
+      [options]="
+      {
+        rewind: true,
+        isNavigation: true,
+        focus: 'center',
+        pagination: false,
+        perPage: 3,
+        cover: true,
+        arrows: false,
+        width: '100%',
+      }"
+    >
+      <splide-slide>
+        <img id="1" class="w-36 h-24 object-cover" [src]="images[0]" />
+      </splide-slide>
+      <splide-slide>
+        <img id="2" class="w-36 h-24 object-cover" [src]="images[1]" />
+      </splide-slide>
+      <splide-slide>
+        <img id="3" class="w-36 h-24 object-cover" [src]="images[2]" />
+      </splide-slide>
+    </splide>
+  </div>
+  <div class="mx-auto flex justify-center items-center"> 
+    <splide
+          class="block w-full h-full"
+      [options]="
+      {
+      perPage: 1,
+      pagination: false,
+      cover: true,
+      type: 'fade',
+      arrows: false,
+      width:'32rem',
+    }"
+      [syncWith]="gridThumbnailSplide"
+    >
+      <splide-slide>
+        <div id="1" class="relative">
+          <img
+            [src]="images[0]"
+            class="object-contain "
+          />
+        </div>
+      </splide-slide>
+      <splide-slide>
+        <div id="2" class="relative">
+          <img
+            [src]="images[1]"
+            class="object-contain "
+          />
+        </div>
+      </splide-slide>
+      <splide-slide>
+        <div id="3" class="relative">
+          <img
+            [src]="images[2]"
+            class="object-contain "
+          />
+        </div>
+      </splide-slide>
+    </splide>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 <div class="flex flex-col border">
   <div class="p-6 flex flex-col sm:flex-row gap-4">
     <div class="relative w-full sm:w-[800px]">
+      <a [routerLink]="['/msr-collection']">
       <img
         src="assets/landing1bw.png"
         class="w-full h-full object-contain rounded"
@@ -20,17 +21,17 @@
           MSR COLLECTION
         </div>
       </div>
+      </a>
     </div>
     <div class="flex flex-col justify-between items-start gap-4">
-      <div  [routerLink]="['/msr-collection']" class="cursor-pointer hover:text-blue-500">Project 1</div>
-      <div>
-        <div class="flex gap-3">
-          <div class="cursor-pointer hover:text-blue-500">Msr Collection</div>
+      <div [routerLink]="['/msr-collection']" class="cursor-pointer hover:text-blue-500">Project 1</div>
+      <div class="hover:text-blue-500">
+        <div [routerLink]="['/msr-collection']" class="flex gap-3">
+          <div class="cursor-pointer">Msr Collection</div>
         </div>
-        <div class="cursor-pointer hover:text-blue-500">2024</div>
+        <div class="cursor-pointer">2024</div>
         <div>
-          <div class="cursor-pointer hover:text-blue-500">Locations</div>
-          <div class="cursor-pointer hover:text-blue-500">Cairo, Aswan</div>
+          <div class="cursor-pointer">Cairo, Aswan</div>
         </div>
       </div>
     </div>
