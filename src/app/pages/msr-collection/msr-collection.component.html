@@ -1,8 +1,38 @@
-<div class="m-auto mt-16 sm:mt-20 sm:text-2xl flex flex-col gap-8 justify-center items-center">
-  <div class="flex w-full justify-center items-center">
-    <splide
-      #gridThumbnailSplide
-      [options]="
+<div
+  class="m-auto mt-16 xl:mt-32 xl:text-2xl flex flex-col xl:flex-row gap-8 p-8 justify-evenly "
+>
+  <div class="flex flex-col justify-between items-start">
+    <div class="w-full flex flex-col justify-center items-center gap-2">
+      <div
+        class="font-noto_arabic_secondary cursor-pointer text-6xl xl:text-8xl font-bold text-pink-300 drop-shadow-[2px_2px_0px_rgba(22,160,133,1)] z-50"
+      >
+        أسوان
+      </div>
+      <div
+        class="font-noto_arabic_secondary cursor-pointer text-xl xl:text-3xl font-bold text-pink-300 drop-shadow-[1px_1px_0px_rgba(22,160,133,1)] z-50"
+      >
+        MSR COLLECTION
+      </div>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center xl:items-start gap-2">
+        <div>Project 1</div>
+          <div class="flex xl:flex-col gap-4">
+            <div class="flex gap-3">
+              <div class="cursor-pointer">Msr Collection</div>
+            </div>
+            <div class="cursor-pointer">2024</div>
+            <div>
+              <div class="cursor-pointer">Cairo, Aswan</div>
+            </div>
+          </div>
+    </div>
+      
+  </div>
+  <div class="flex flex-col gap-8 justify-center items-center">
+    <div class="flex w-full justify-center items-center">
+      <splide
+        #gridThumbnailSplide
+        [options]="
       {
         rewind: true,
         isNavigation: true,
@@ -13,22 +43,22 @@
         arrows: false,
         width: '100%',
       }"
-    >
-      <splide-slide>
-        <img id="1" class="w-36 h-24 object-cover" [src]="images[0]" />
-      </splide-slide>
-      <splide-slide>
-        <img id="2" class="w-36 h-24 object-cover" [src]="images[1]" />
-      </splide-slide>
-      <splide-slide>
-        <img id="3" class="w-36 h-24 object-cover" [src]="images[2]" />
-      </splide-slide>
-    </splide>
-  </div>
-  <div class="mx-auto flex justify-center items-center"> 
-    <splide
-          class="block w-full h-full"
-      [options]="
+      >
+        <splide-slide>
+          <img id="1" class="w-36 h-24 object-cover" [src]="images[0]" />
+        </splide-slide>
+        <splide-slide>
+          <img id="2" class="w-36 h-24 object-cover" [src]="images[1]" />
+        </splide-slide>
+        <splide-slide>
+          <img id="3" class="w-36 h-24 object-cover" [src]="images[2]" />
+        </splide-slide>
+      </splide>
+    </div>
+    <div class="mx-auto flex justify-center items-center">
+      <splide
+        class="block w-full h-full"
+        [options]="
       {
       perPage: 1,
       pagination: false,
@@ -37,32 +67,29 @@
       arrows: false,
       width:'32rem',
     }"
-      [syncWith]="gridThumbnailSplide"
-    >
-      <splide-slide>
-        <div id="1" class="relative">
-          <img
-            [src]="images[0]"
-            class="object-contain "
-          />
-        </div>
-      </splide-slide>
-      <splide-slide>
-        <div id="2" class="relative">
-          <img
-            [src]="images[1]"
-            class="object-contain "
-          />
-        </div>
-      </splide-slide>
-      <splide-slide>
-        <div id="3" class="relative">
-          <img
-            [src]="images[2]"
-            class="object-contain "
-          />
-        </div>
-      </splide-slide>
-    </splide>
+        [syncWith]="gridThumbnailSplide"
+      >
+        <splide-slide>
+          <div id="1" class="relative">
+            <img [src]="images[0]" class="object-contain" />
+          </div>
+        </splide-slide>
+        <splide-slide>
+          <div id="2" class="relative">
+            <img [src]="images[1]" class="object-contain" />
+          </div>
+        </splide-slide>
+        <splide-slide>
+          <div id="3" class="relative">
+            <img [src]="images[2]" class="object-contain" />
+          </div>
+        </splide-slide>
+      </splide>
+    </div>
+  </div>
+  <div class="flex flex-col flex-wrap w-full xl:max-w-[256px] max-w-full justify-end items-center xl:items-start gap-2">
+    <div class="xl:min-w-[256px] max-w-[256px] text-xs xl:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum, et, veritatis tempora a ex officiis dicta nulla rem quisquam rerum est repellat. Quia soluta, accusamus id possimus ipsum tenetur?
+    </div>
   </div>
 </div>
